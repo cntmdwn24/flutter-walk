@@ -5,6 +5,10 @@ class CommunityScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('커뮤니티 스크린'),
+      ),
+    );
   }
 }
