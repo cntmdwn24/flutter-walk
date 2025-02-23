@@ -8,7 +8,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 
-  Future.delayed(Duration(seconds: 1), () {
+  Future.delayed(Duration(seconds: 10), () {
     runApp(
       EasyLocalization(
           supportedLocales: supportedLocales,
