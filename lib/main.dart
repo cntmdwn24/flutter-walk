@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:walk/common/color.dart';
 import 'package:walk/presentation/screens/home_screen.dart';
 
 final supportedLocales = [Locale('en', 'US'), Locale('ko', 'KR')];
@@ -24,7 +25,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: 'NanumSquare'),
+        theme: ThemeData(
+          fontFamily: 'NanumSquare',
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.white,
+          ),
+          bottomNavigationBarTheme:
+              BottomNavigationBarThemeData(backgroundColor: Colors.white),
+        ),
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,

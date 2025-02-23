@@ -7,7 +7,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('안녕하세요'),
+        backgroundColor: Colors.blue,
+        title: Text('아'),
       ),
     );
   }
