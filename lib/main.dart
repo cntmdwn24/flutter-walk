@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:walk/presentation/screens/splash_screen.dart';
+import 'package:walk/presentation/screens/home_screen.dart';
 
 final supportedLocales = [Locale('en', 'US'), Locale('ko', 'KR')];
 
@@ -28,6 +28,6 @@ class MyApp extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        home: SplashScreen());
+        home: HomeScreen());
   }
 }
